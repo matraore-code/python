@@ -31,6 +31,8 @@ scissors = '''
 map = [rock, paper, scissors]
 computer = random.randint(0, 2)
 result = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."))
+if result < 0 and result > 2
+    print("you lose! invalid number")
 if result == 0:
   print(map[result])
   print(f"Computer choose \n{map[computer]}")
